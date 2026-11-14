@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>The Royal Prediction | Official VIP Telegram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1105268002490806');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1105268002490806&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --bg-obsidian: #070709;
+      --gold-light: #fff0b3;
+      --gold-primary: #d4af37;
+      --gold-dark: #996515;
+      --glass-bg: rgba(18, 18, 24, 0.74);
+      --glass-border: rgba(212, 175, 55, 0.38);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-color: var(--bg-obsidian);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #ffffff;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      background:
+        radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.2), transparent 55%),
+        radial-gradient(circle at 85% 85%, rgba(0, 136, 204, 0.15), transparent 50%),
+        linear-gradient(160deg, #050507 0%, #0d0d13 50%, #060608 100%);
+      position: relative;
+    }
+
+    /* Ambient luxury shimmer */
+    .ambient-orb {
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+      filter: blur(24px);
+      pointer-events: none;
+      animation: floatOrb 7s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatOrb {
+      0% { transform: translate(-20px, -25px) scale(0.95); }
+      100% { transform: translate(20px, 25px) scale(1.08); }
+    }
+
+    /* Top Agency Bar */
+    .top-bar {
+      position: absolute;
+      top: 12px;
+      z-index: 10;
+    }
+
+    .agency-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+
+    .agency-pill span {
+      color: var(--gold-primary);
+      font-weight: 700;
+    }
+
+    /* Main Luxury Glass Card */
+    .card {
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      max-width: 390px;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 26px;
+      padding: 22px 20px 20px;
+      text-align: center;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.85),
+        inset 0 1px 1px rgba(255, 240, 179, 0.25);
+    }
+
+    /* Royal Crown / VIP Tag */
+    .vip-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(212, 175, 55, 0.18), rgba(255, 240, 179, 0.08));
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      color: var(--gold-light);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    /* Luxury Supercar DP Frame */
+    .dp-wrapper {
+      position: relative;
+      width: 112px;
+      height: 112px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      padding: 3.5px;
+      background: conic-gradient(from 0deg, #996515, #fff0b3, #d4af37, #996515, #fff0b3, #996515);
+      box-shadow: 0 0 28px rgba(212, 175, 55, 0.45);
+      animation: ringGlow 3.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes ringGlow {
+      0% { box-shadow: 0 0 18px rgba(212, 175, 55, 0.35); }
+      100% { box-shadow: 0 0 34px rgba(255, 240, 179, 0.68); }
+    }
+
+    .dp-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #09090c;
+      background: #0d0d12;
+    }
+
+    .dp-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .dp-vip-pill {
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #fff0b3, #d4af37);
+      color: #090702;
+      font-size: 8.5px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      padding: 1.5px 8px;
+      border-radius: 999px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 3px;
+      right: 3px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2aabee, #0077b5);
+      border: 2px solid #0b0b0f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+
+    /* Channel Name */
+    .channel-title {
+      font-family: 'Cinzel', serif;
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      line-height: 1.2;
+      background: linear-gradient(180deg, #ffffff 0%, #ffe699 45%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #b8bcc8;
+      font-weight: 500;
+      line-height: 1.45;
+      margin-bottom: 14px;
+      padding: 0 6px;
+    }
+
+    /* Feature Highlights */
+    .perks {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .perk-chip {
+      font-size: 10px;
+      font-weight: 700;
+      color: #f3dfa2;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      padding: 4.5px 9px;
+      border-radius: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    /* Pop-up Animated Join Now Telegram Button (Above Timer) */
+    .cta-wrap {
+      margin-bottom: 16px;
+    }
+
+    .join-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      color: #0b0904;
+      background: linear-gradient(135deg, #fff0b3 0%, #f5c84c 45%, #d4af37 100%);
+      border: 1px solid #fff7d6;
+      box-shadow:
+        0 10px 28px rgba(212, 175, 55, 0.45),
+        0 0 0 0 rgba(245, 200, 76, 0.65);
+      overflow: hidden;
+      animation: popPulse 1.6s infinite ease-in-out;
+      transition: transform 0.2s ease;
+    }
+
+    .join-btn:active {
+      transform: scale(0.97);
+    }
+
+    .join-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.72) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: skewX(-22deg);
+      animation: shineSweep 2.5s infinite;
+    }
+
+    @keyframes popPulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow:
+          0 10px 28px rgba(212, 175, 55, 0.45),
+          0 0 0 0 rgba(245, 200, 76, 0.6);
+      }
+      50% {
+        transform: scale(1.038);
+        box-shadow:
+          0 14px 36px rgba(212, 175, 55, 0.75),
+          0 0 0 10px rgba(245, 200, 76, 0);
+      }
+    }
+
+    @keyframes shineSweep {
+      0% { left: -75%; }
+      55%, 100% { left: 135%; }
+    }
+
+    /* 15-Second SVG Circular Countdown Timer */
+    .timer-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .timer-box {
+      position: relative;
+      width: 66px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .timer-svg {
+      width: 66px;
+      height: 66px;
+      transform: rotate(-90deg);
+    }
+
+    .timer-track {
+      fill: rgba(255, 255, 255, 0.03);
+      stroke: rgba(212, 175, 55, 0.18);
+      stroke-width: 4.5;
+    }
+
+    .timer-progress {
+      fill: none;
+      stroke: url(#goldGradient);
+      stroke-width: 4.5;
+      stroke-linecap: round;
+      stroke-dasharray: 176;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s linear;
+    }
+
+    .timer-number {
+      position: absolute;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gold-light);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .timer-label {
+      font-size: 11px;
+      color: #9ca3af;
+      letter-spacing: 0.4px;
+    }
+
+    .timer-label strong {
+      color: var(--gold-primary);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-orb"></div>
+
+  <!-- Top Branding -->
+  <div class="top-bar">
+    <a href="https://wa.me/918924888201" target="_blank" rel="noopener" class="agency-pill">
+      Powered by <span>AR Advertisement</span>
+    </a>
+  </div>
+
+  <!-- Main Luxury Card -->
+  <main class="card">
+    <div class="vip-tag">
+      <span>👑</span> ROYAL VIP ACCESS <span>👑</span>
+    </div>
+
+    <!-- Luxury Supercar DP -->
+    <div class="dp-wrapper">
+      <div class="dp-inner">
+        <img
+          src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=400&q=85"
+          alt="The Royal Prediction Luxury Supercar"
+        />
+        <span class="dp-vip-pill">VIP</span>
+      </div>
+      <div class="verified-badge" title="Verified Channel">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M20 6L9 17L4 12" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Channel Title -->
+    <h1 class="channel-title">THE ROYAL PREDICTION</h1>
+    <p class="subtitle">Join the elite circle for high-accuracy match analysis, premium insights &amp; exclusive VIP updates.</p>
+
+    <!-- Trust Chips -->
+    <div class="perks">
+      <div class="perk-chip">⚡ Fast Updates</div>
+      <div class="perk-chip">👑 Free VIP Access</div>
+      <div class="perk-chip">🔒 Verified Channel</div>
+    </div>
+
+    <!-- Pop-up Join Now Telegram Button (Above Timer) -->
+    <div class="cta-wrap">
+      <a id="joinBtn" href="https://t.me/+G1deQRWCp901ZDFl" class="join-btn">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        </svg>
+        JOIN NOW TELEGRAM
+      </a>
+    </div>
+
+    <!-- 15-Second Redirect Timer -->
+    <div class="timer-section">
+      <div class="timer-box">
+        <svg class="timer-svg" viewBox="0 0 64 64">
+          <defs>
+            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff0b3" />
+              <stop offset="50%" stop-color="#f5c84c" />
+              <stop offset="100%" stop-color="#b8860b" />
+            </linearGradient>
+          </defs>
+          <circle class="timer-track" cx="32" cy="32" r="28"></circle>
+          <circle id="progressRing" class="timer-progress" cx="32" cy="32" r="28"></circle>
+        </svg>
+        <div id="countdownText" class="timer-number">15</div>
+      </div>
+      <p class="timer-label">Auto-redirecting to <strong>The Royal Prediction</strong> in <span id="secLabel">15s</span></p>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      const telegramUrl = "https://t.me/+G1deQRWCp901ZDFl";
+      const totalSeconds = 5;
+      let remaining = totalSeconds;
+
+      const countdownText = document.getElementById("countdownText");
+      const secLabel = document.getElementById("secLabel");
+      const progressRing = document.getElementById("progressRing");
+      const joinBtn = document.getElementById("joinBtn");
+
+      const radius = 28;
+      const circumference = 2 * Math.PI * radius;
+      progressRing.style.strokeDasharray = circumference;
+      progressRing.style.strokeDashoffset = 0;
+
+      let leadFired = false;
+      function triggerRedirect(source) {
+        if (!leadFired && typeof fbq === "function") {
+          leadFired = true;
+          fbq("track", "Lead", {
+            content_name: "The Royal Prediction Telegram",
+            source: source
+          });
+        }
+        window.location.href = telegramUrl;
+      }
+
+      joinBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        triggerRedirect("button_click");
+      });
+
+      const timer = setInterval(function () {
+        remaining -= 1;
+
+        if (remaining >= 0) {
+          countdownText.textContent = remaining;
+          secLabel.textContent = remaining + "s";
+          const offset = circumference - (remaining / totalSeconds) * circumference;
+          progressRing.style.strokeDashoffset = offset;
+        }
+
+        if (remaining <= 0) {
+          clearInterval(timer);
+          triggerRedirect("auto_timer");
+        }
+      }, 1000);
+    })();
+  </script>
+</body>
+</html>
